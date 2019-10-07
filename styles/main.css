@@ -14,7 +14,8 @@ nav a:link {color:#45A29E;
 }
 nav a:visited {color:#4F8775;
 }
-.byline {color:#D1E8E2; opacity: 0.5;
+.byline {
+    color: rgba(209, 232, 226, 0.5); 
 }
 #page-copyright {color:#66FCF1;
 }
