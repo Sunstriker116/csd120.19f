@@ -1,22 +1,31 @@
 @charset "UTF-8";
 
-body {background-color: #0B0C10; color: #E7ECEF;
+body {
+    background-color: #0B0C10; 
+    color: #E7ECEF;
 }
-h1 {color: #66FCF1;
+h1 {
+    color: #66FCF1;
 }
-h2 {color: #66FCF1;
+h2 {
+    color: #66FCF1;
 }
-a:link{color: #659DBD;
+a:link{
+    color: #659DBD;
 }
-a:visited {color: #4F8775;
+a:visited {
+    color: #4F8775;
 }
-nav a:link {color:#45A29E;
+nav a:link {
+    color:#45A29E;
 }
-nav a:visited {color:#4F8775;
+nav a:visited {
+    color:#4F8775;
 }
 .byline {
     color: rgba(209, 232, 226, 0.5); 
 }
-#page-copyright {color:#66FCF1;
+#page-copyright {
+    color:#66FCF1;
 }
 
