@@ -5,7 +5,7 @@
 }
 main {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 2em;
 }
 .bio {
@@ -175,7 +175,7 @@ div .back-to-top:hover {
 .gallery-thumbnails {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    
+    width: 100%;
 }
 .gallery-thumbnails img{
     width: 100%;
