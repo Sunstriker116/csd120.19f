@@ -10,11 +10,11 @@ main {
 }
 .bio {
     grid-column: 1 / span 2;
-    
+
 }
 body {
     display: flex;
-    background-color: #85929E; 
+    background-color: #85929E;
     color: #E7ECEF;
     font-family: 'Domine', serif;
     font-family: 'Roboto', sans-serif;
@@ -29,7 +29,7 @@ header nav {
     margin: -4px 2em 0;
     border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
     overflow: auto;
-    
+
 }
 header nav ul li {
     padding-right: 10px;
@@ -45,7 +45,7 @@ ul {
     list-style-type: circle;
 }
 h1 {
-    
+
     background: rgb(8,225,242);
     background: linear-gradient(0deg, rgba(8,225,242,1) 0%, rgba(133,140,139,0.76234243697479) 46%, rgba(9,241,188,0.25253851540616246) 100%);
     -webkit-background-clip: text;
@@ -144,7 +144,7 @@ figure img {
     width: 50px;
     background-size: contain;
     background-image: url("../images/paperclip.png");
-    
+
 }
 .favourite {
     clear:both;
@@ -194,4 +194,51 @@ div .back-to-top:hover {
 img {
     max-width: 100%;
     height: auto;
+}
+.t1 {
+    border-collapse: collapse;
+}
+.t1 th{
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0.3em 1em 0.3em;
+    border-left: 3px solid #34495E;
+    border-right: 3px solid #34495E;
+}
+.t1 td{
+    background: rgba(0, 0, 0, 0.05);
+    padding: 0.3em 1em 0.3em;
+    border-left: 3px solid #34495E;
+    border-right: 3px solid #34495E;
+}
+.odd td{
+    background: rgba(0, 0, 0, 0.1);
+}
+#second{
+    border-top:3px solid#34495E;
+}
+#seventh{
+     border-top:3px solid#34495E;
+}
+#fall{
+     background: rgba(0, 0, 0, 0.1);
+}
+.survey{
+    grid-column: 1 / span 2;
+}
+form{
+    display: grid;
+}
+label{
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+input[type="submit"]{
+    margin-top: 1em;
+    justify-self: end;
+    font-size: 24px;
+    padding: 1em 2em 1em;
+    background: cornflowerblue;
+}
+#burger-toggle{
+    display: none;
 }

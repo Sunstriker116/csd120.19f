@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/mobile.css"   media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="styles/baguetteBox.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -16,21 +17,23 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Domine/Roboto&display=swap" rel="stylesheet">
+    <script src="Java/baguetteBox.js"></script>
 </head>
 <body>
     <div class="width-wrap">
         <header id="top">
             <nav>
-            <div class="burger"></div>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="links.html">Links</a></li>
-                    <li><a href="glossary.html">Glossary</a></li>
-                </ul>
+            <input type="checkbox" id="burger-toggle">
+            <label for="burger-toggle" class="burger"></label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="links.html">Links</a></li>
+                 <li><a href="glossary.html">Glossary</a></li>
+            </ul>
             </nav>
         </header>
-    
-    
+
+
         <main>
             <section class="bio">
               <h1>Welcome to CJ's CSD120 Website!</h1>
@@ -48,7 +51,7 @@
                 <p class="bio">I enjoy playing a varety of games in my free time, whether they be board games, card games, or video games.
                 </p>
             </section>
-        
+
         <section class="favourite">
             <h2>My Three Favourite Video Games</h2>
                 <ol type="1">
@@ -57,7 +60,7 @@
                     <li>Dragon Age Origins</li>
                 </ol>
         </section>
-    
+
         <section id="haiku">
             <h2>Haiku</h2>
                 <p><span style="color:#D1E8E2;background-color:#116466">
@@ -68,6 +71,58 @@
                 </span>
                 <span class="byline"><em>by <strong>Annonymous</strong></em></span>
                 </p>
+        </section>
+        <section>
+            <h2>My Sault College Courses</h2>
+            <table class="t1">
+                <tr class="odd">
+                    <th>Term</th>
+                    <th>Code</th>
+                    <th>Course Name</th>
+                </tr>
+                <tr class="even" id="second">
+                    <td id="fall" rowspan="5">Fall</td>
+                    <td>CSD105</td>
+                    <td>Python</td>
+                </tr>
+                <tr class="odd">
+                    <td >CSD120</td>
+                    <td >Web Development</td>
+                </tr>
+                <tr class="even">
+                    <td>CSD104</td>
+                    <td>OS/Lan</td>
+                </tr>
+                <tr class="odd">
+                    <td>MTH122</td>
+                    <td>Computer Mathematics</td>
+                </tr>
+                <tr class="even">
+                    <td>TNY130</td>
+                    <td>Technology In Society</td>
+                </tr>
+                <tr class="odd" id="seventh">
+                    <td rowspan="5">Winter</td>
+                    <td>CSA103</td>
+                    <td>Buisness Applications</td>
+                </tr>
+                <tr class="even">
+                    <td>CSD102</td>
+                    <td>C++</td>
+                </tr>
+                <tr class="odd">
+                    <td>CSD212</td>
+                    <td>Web Scripting Languages</td>
+                </tr>
+                <tr class="even">
+                    <td>CSO102</td>
+                    <td>LINUX</td>
+                </tr>
+                <tr class="odd">
+                    <td>CST104</td>
+                    <td>PC Hardware and Networking</td>
+                </tr>
+            </table>
         </section>
         <section class="gallery">
             <h2>Photo Gallery</h2>
@@ -107,35 +162,65 @@
                 <a href="https://picsum.photos/id/987/1024">
                     <img src="https://picsum.photos/id/987/300"
                     alt="Placeholder Image">
-                </a>                
+                </a>
                 <a class="row-span-2 col-span-2" href="https://picsum.photos/id/48/1024">
                     <img src="https://picsum.photos/id/48/600"
                     alt="Placeholder Image">
-                </a>    
+                </a>
                 <a href="https://picsum.photos/id/33/1024">
                     <img src="https://picsum.photos/id/33/300"
                     alt="Placeholder Image">
-                </a>                            
+                </a>
                 <a href="https://picsum.photos/id/6/1024">
                     <img src="https://picsum.photos/id/6/300"
                     alt="Placeholder Image">
-                </a>                
+                </a>
                 <a href="https://picsum.photos/id/116/1024">
                     <img src="https://picsum.photos/id/116/300"
                     alt="Placeholder Image">
-                </a>                
+                </a>
                 <a href="https://picsum.photos/id/60/1024">
                     <img src="https://picsum.photos/id/60/300"
                     alt="Placeholder Image">
-                </a>                
+                </a>
                 <a href="https://picsum.photos/id/50/1024">
                     <img src="https://picsum.photos/id/50/300"
                     alt="Placeholder Image">
-                </a>     
-            </div>   
+                </a>
+            </div>
+        </section>
+        <section class="survey">
+          <h2>Survey</h2>
+          <form action="https://formspree.io/xbjlwwaw" method="POST">
+              <label for="name">What is your name?</label>
+              <input type="text" name="name_field" id="name"/>
+              <label for="email">What is your email?</label>
+              <input type="text" name="email_field" id="email"/>
+              <label for="integer">What integer is best?</label>
+              <input type="text" name="best_integer" id="integer"/>
+              <label for="day">Which day is best?</label>
+              <input type="text" name="best_day" id="day"/>
+              <label for="bear">Which bear is best?</label>
+              <select id="bear" name="best_bear">
+                  <option value="blank">---</option>
+                  <option value="black_bear">Black</option>
+                  <option value="brown-bear">Brown</option>
+                  <option value="care">Care</option>
+                  <option value="panda">Panda</option>
+                  <option value="polar">Polar</option>
+                  <option value="teddy">Teddy</option>
+              </select>
+              <label>Do you like radio buttons?</label>
+              <label for="radioy"><input type="radio" id="radioy" value="yes"/>Yes</label>
+              <label for="radion"><input type="radio" id="radion" value="no"/>No</label>
+              <label for="radio?"><input type="radio" id="radio?" value="?"/>None of your buisness</label>
+              <label for="meaning">What is the meaning of life?</label>
+              <textarea id="meaning" name="life_meaning" rows="10">Enter the correct answer here.</textarea>
+              <input type="submit" value="SEND"/>
+          </form>
         </section>
         </main>
-    
+
         <footer>
             <hr>
                 <blockquote>
@@ -153,5 +238,10 @@
         <a href="#top">◤</a>
         </div>
     </div>
+    <script>
+        baguetteBox.run('.gallery-thumbnails', {
+            filter: /picsum\.photos\/id/i
+        });
+    </script>
 </body>
 </html>
